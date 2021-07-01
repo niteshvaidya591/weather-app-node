@@ -8,7 +8,7 @@ const weatherController = require('../controllers/weatherController')
 router.post('/place', weatherController.POST_singleWeather)
 
 //  @desc   place by zipcode
-//  @route  GET  /:ID
+//  @route  POST  /:ID
 //router.post('/:zipID',ensureValidId , weatherController.POST_singleWeatherById)
 
 
