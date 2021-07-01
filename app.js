@@ -31,7 +31,9 @@ app.use(express.json());
 //  Routes
 app.use('/weather', require('./routes/weatherRoute'));
 
-
+app.get('/',(req,res)=>{
+    res.send('welcome to weather node server app')
+})
 
 app.listen(PORT, () => {
     console.log(`App running in ${process.env.NODE_ENV}  on port : ${PORT}`);
