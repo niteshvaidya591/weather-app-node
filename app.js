@@ -24,6 +24,7 @@ if (process.env.NODE_ENV === 'development') {
     //  Logging
     app.use(morgan('dev'))
 }
+app.use(cors());
 const PORT = process.env.PORT || 5000;
 
 //  Middlewares
